@@ -1,3 +1,18 @@
 #!/usr/bin/python3
+
+#prompt user to enter their name
+
 name = input('Enter your name ')
 print(f'your name is {name}')
+
+#prompt name to enter 2 numbers
+
+num1 = input('enter a number: ')
+num2 = input('enter another number: ')
+
+#convert the strings into numbers integer
+
+num1 = int(num1)
+num2 = int(num2)
+
+print(f' you have entered{num1} & {num2}')
