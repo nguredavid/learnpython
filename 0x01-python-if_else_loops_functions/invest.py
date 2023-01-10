@@ -2,7 +2,7 @@
 
 #prompt user to enter their investment + interest rate
 
-money = input("How much do you want to invest : ")
+money = input("Millicent, How much do you want to invest for yourself : ")
 interest = input("what is your interest rate : ")
 
 #convert value to float
