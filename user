@@ -15,4 +15,20 @@ num2 = input('enter another number: ')
 num1 = int(num1)
 num2 = int(num2)
 
-print(f' you have entered{num1} & {num2}')
+#add the two numbers and store sum
+
+sum = num1 + num2
+
+print(f'{name}, The sum of {num1} and {num2} = {sum} ')
+
+#substract the two numbers and store difference
+
+dif = num1 - num2
+
+print(f'The differece of {num1} and {num2} = {dif} ')
+
+#multply the two numbers and store product
+
+multiply = num1 * num2
+
+print(f'The product of {num1} and {num2} = {multiply} ')
