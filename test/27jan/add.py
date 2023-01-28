@@ -8,6 +8,6 @@ def add(num1, num2):
 
 #prompt user to enter 2 numbers and call fxn for sum
 
-sum = int(input('Please enter any two numbers '))
+sum = int(input('Please the first numbers '))
 sum2 = int(input('Please enter any two numbers '))
 add(sum, sum2)
