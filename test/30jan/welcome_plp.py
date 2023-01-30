@@ -3,7 +3,9 @@
 #function that welcomes the user
 
 def welcome_message():
-    print('Welcome to python programming')
+    name =str(input('please enter your name: '))
+    print('Welcome', name)
 
 #outside function
+
 welcome_message()
