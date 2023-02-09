@@ -2,6 +2,7 @@
 
 #import add_0.py
 
-import add_0.py
+import add_0
 
-print(add_0.add(10, 40))
+result = add_0.add(1, 2)
+print(f'The sum of the two numbers is : {result}')
