@@ -2,12 +2,13 @@
 
 #Question 4: Sum of numbers
 
-def sums(num1, num2):
-     return num1 + num2
+def sums():
+    
+    return num1 + num2
 
-num_1 = 3
-num_2 = 5
 
-result = sums(3, 5)
+num1 = int(input('Please enter num1 '))
+num2 = int(input('Please enter num2 '))
+result = sums()
 
-print(result)
+print(f' {num1} + {num2} = {result}')
