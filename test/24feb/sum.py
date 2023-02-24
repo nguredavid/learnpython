@@ -7,8 +7,8 @@ def sums():
     return num1 + num2
 
 
-num1 = int(input('Please enter num1 '))
-num2 = int(input('Please enter num2 '))
+num1 = float(input('Please enter num1 '))
+num2 = float(input('Please enter num2 '))
 result = sums()
 
 print(f' {num1} + {num2} = {result}')
