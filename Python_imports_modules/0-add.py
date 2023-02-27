@@ -6,5 +6,5 @@ import add_0
 a = 10
 b = 23
 result = add_0.add(a, b)
-print(result)
+print(f'{a} + {b} = {result}')
 
