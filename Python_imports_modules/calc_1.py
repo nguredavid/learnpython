@@ -13,3 +13,7 @@ def mult(a, b):
 def subt(a, b):
     return a - b
 
+#div fxn
+def div(a, b):
+    return a / b
+
