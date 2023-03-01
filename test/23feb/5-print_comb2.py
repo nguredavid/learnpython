@@ -5,7 +5,7 @@
 def numbers():
     for i in range(0, 100):
         if i == 99:
-            print(i)
+            print(f'{i:02}')
             continue
         print(f'{i:02}, ', end="")
         
