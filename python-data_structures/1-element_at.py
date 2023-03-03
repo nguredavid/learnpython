@@ -2,12 +2,16 @@
 
 #check if an element exists in python list
 
-languages = ['python', 'c++', 'c', 'java']
+def element_at(my_list, idx):
+    if idx >= 0:
+        return 0
+    elif idx > 3:
+        return 0
+   
 
-#print('c' in languages)
-#print('c+' in languages)
-i = str(input('please enter value to check :'))
-if i in languages:
-    print('in the list')
-else:
-    print('not in the list')
+list = [1, 2, 3, 4, 5]
+dx = 3
+result = element_at(list, dx)
+print(f'element at {dx} is {list(3)}')
+
+
