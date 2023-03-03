@@ -4,13 +4,15 @@
 
 l1 = [3, 6, 9, 12, 15, 18, 21]
 l2 = [4, 8, 12, 16, 20, 24, 28]
-
+result = list()
 odd_elements = l1[1::2]
 print(odd_elements)
 
 even_elements = l2[0::2]
 print(even_elements)
 
-new_list = odd_elements + even_elements
+#new_list = odd_elements + even_elements
 
-print(new_list)
+result.extend(odd_elements)
+result.extend(even_elements)
+print(result)
