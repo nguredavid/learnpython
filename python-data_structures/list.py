@@ -2,7 +2,7 @@
 
 language = ['java', 'c', 'c++']
 
-language[2] = 'python'
+del language[1]
 
 print(language)
 
