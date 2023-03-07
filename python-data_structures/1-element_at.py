@@ -8,7 +8,7 @@ def element_at(my_list, idx):
    
 
 list = [1, 2, 3, 4, 5]
-dx = 3
+dx =4 
 result = element_at(list, dx)
 print(f'element at {dx} is {result}')
 
