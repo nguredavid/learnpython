@@ -25,5 +25,6 @@ for i in integer_list:
     numbers.append(float(i))
 #sum up the integers
 print(numbers)
+
 result = sum(numbers)
-print(f'The sum of the list {numbers} is : {result}')
+print(f'The sum of the list {numbers} sorrted is : {result}')
