@@ -24,6 +24,7 @@ for i in integer_list:
 
     numbers.append(float(i))
 #sum up the integers
+numbers.sort()
 print(numbers)
 
 result = sum(numbers)
