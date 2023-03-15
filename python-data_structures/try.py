@@ -1,14 +1,13 @@
 #!/usr/bin/python3
 
-integer = input('Please input')
+def add_tuple(tuple_a=(), tuple_b=()):
+        
+    return tuple_a[0] + tuple_b[0], tuple_a[1] + tuple_b[1]
+ 
+a1 = (8, 9)
+b1 = (6, 8)
 
-integers = integer.split()
-
-print(integers)
-numbers = []
-for i in integers:
-   numbers.append(int(i))
-numbers.sort()
-print(numbers)
-results = sum(numbers)
-print(results)
+res1 = add_tuple(a1, b1)
+print(res1)
+print(a1)
+print(b1)
