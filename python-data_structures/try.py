@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 
-def add_tuple(tuple_a=(), tuple_b=()):
-        
-    return tuple_a[0] + tuple_b[0], tuple_a[1] + tuple_b[1]
- 
-a1 = (8, 9)
-b1 = (6, 8)
+def divisible_by_2(my_list=[]):
+    for i in lists:
+        if i % 2 == 0:
+            print(f'{i} is divisible by 2')
+        else:
+            print(f'{i} is not divisible by 2')
 
-res1 = add_tuple(a1, b1)
-print(res1)
-print(a1)
-print(b1)
+    
+lists = [0, 1, 2, 3, 4, 5, 6]
+divisible_by_2(lists)
