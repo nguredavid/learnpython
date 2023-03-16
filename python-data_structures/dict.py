@@ -1,12 +1,15 @@
 #!/usr/bin/python3
 
-persons = input('Please enter your name, age and favorite color ')
 
-indiv = persons.split()
+persons = {} 
 
-person = []
+persons["name"] = str(input('Please enter your name '))
 
-for i in indiv:
+persons["age"] = input('Please enter your age ')
 
-    person.append(str(i))
-print(person)
+persons["favourite color"] = input('Please enter your ')
+
+for i in persons:
+    print(persons)
+
+
