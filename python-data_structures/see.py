@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
-def print_list_integer(my_list=[]):
-   my_list = [1, 2, 3, 4, 5]
-   for i in my_list:
-       print(f'{i}')
-print_list_integer(list)
+samp = {0: 10, 1: 20}
+print(samp)
+samp.update({2: 30})
+print(samp)
