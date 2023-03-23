@@ -2,26 +2,44 @@
 #name = input('Enter customer (Yes/No) : ')
 
 def customer_details():
+
     #create a list
 
-    customer = []
+    customers = []
 
     #create a loop
+
     while True:
-        name = input('Enter customer (Yes/No) : ')
-    
-        if name == "n":
+
+        c_name = input("Enter customer name (y/n): ")
+
+        if c_name == 'n':
+
+
             break
+
         else:
-            c_name = input("Enter customer's name: ")
-            customer.append({'c_name' : c_name})
 
-    for cust in customer:
-        print(cust)
+            customer_name = input("Enter customer name : ")
 
+            customers.append({customer_name})
 
+    #print details
+
+    for cust in customers:
+
+        
+
+        print(customers)
 
 customer_details()
+
+
+
+
+
+
+
 
 
 
