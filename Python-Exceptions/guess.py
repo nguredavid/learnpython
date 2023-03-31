@@ -10,10 +10,12 @@ while True:
             
         if guess != secret_number:
             print("Sorry, please try again")
+            continue
             
         else:
             print('Your guess is right')
             break
+            
 
         
            
