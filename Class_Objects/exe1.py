@@ -12,11 +12,7 @@ class Vehicle:
         '''data members'''
         self.max_speed = max_speed
         self.mileage = mileage
-    '''instance method'''
-    def cars(self):
-        print('speed : ', self.max_speed, 'mileage : ', self.mileage )
 '''create object'''
 car = Vehicle(100, 102000)
 
-'''call method'''
-car.cars()
+print('speed: ', car.max_speed, 'mileage: ', car.mileage)
