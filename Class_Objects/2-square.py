@@ -8,13 +8,15 @@ class Square:
 
     '''constructor'''
 
-    def __init__(self, size):
+    def __init__(self, size=0):
 
-        '''data members'''
-
+        '''date members'''
         self.__size = size
+
     '''instance method'''
-    def siz(self):
+
+    def __sizes(self):
+
         try:
             print(self.size)
         except Exception as e:
@@ -23,7 +25,11 @@ class Square:
             print(self.__size)
         except Exception as e:
             print(e)
-'''create object'''
-sizes = Square(10)
+        try:
+            print(type(self.size))
+        except Exception as e:
+            print(e)
 
-sizes.siz()
+'''create object'''
+siz = Square() 
+siz.sizes()
