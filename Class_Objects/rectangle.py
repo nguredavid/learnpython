@@ -23,10 +23,9 @@ class Rectangle:
 results = Rectangle(10, 40)
 
 '''call methods'''
-results.area()
-print('The area of the rectangle is: ',results.area())
-results.perimeter()
-print('The perimeter of the rectangle is : ', results.perimeter())
+output = results.area()
+print('The area of the rectangle is: ',output)
+print(f'The perimeter of the rectangle is :  {results.perimeter():.2f}')
 
 
     
