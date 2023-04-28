@@ -15,8 +15,12 @@ class Bus:
         '''self.capacity = 50'''
 
         print(f'The seating capacity of a {self.name} is {capacity} passangers')
+
+class Moti(Bus):
+    pass
+
 '''create object'''
-vehicle = Bus(10000, 'Audi', 150)
+vehicle = Moti(10000, 'Audi', 150)
 vehicle.seating_capacity(50)
 
 
