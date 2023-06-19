@@ -15,21 +15,18 @@ class Square:
 
     '''instance method'''
 
-    def __sizes(self):
+    def sizes(self):
 
-        try:
-            print(self.size)
-        except Exception as e:
-            print(e)
         try:
             print(self.__size)
         except Exception as e:
             print(e)
         try:
-            print(type(self.size))
+            print(self.size)
         except Exception as e:
             print(e)
+    
 
 '''create object'''
-siz = Square() 
+siz = Square()
 siz.sizes()

@@ -18,7 +18,7 @@ class Employee:
 
         '''calculate salary'''
     def calculate_emp_salary(self, emp_salary, hours_worked):
-        overtime = 0
+        #overtime = 0
         if hours_worked > 50:
             overtime = hours_worked - 50
         self.emp_salary = self.emp_salary + (overtime * (emp_salary/50))

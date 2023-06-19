@@ -14,7 +14,7 @@ class Bank:
 
         self.account_number = account_number
         self.balance = balance
-        self.owner = balance
+        self.owner = owner
 
     '''method to deposit'''
 
@@ -38,7 +38,13 @@ class Bank:
     def get_owner(self):
 
         return self.owner
+
+balance = input('Please enter the amount to withdraw : ')
+
 '''create object'''
 result = Bank(1010000981603, 500000, 'David')
 
+result.deposit(100)
+result.withdraw()
 print(result.get_balance())
+print(result.get_owner())
