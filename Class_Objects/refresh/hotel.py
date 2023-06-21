@@ -6,7 +6,6 @@ Perform the following tasks now:'''
 class Restuarant:
 
     '''initialize'''
-
     def __init__(self):
 
         '''data members'''
@@ -16,12 +15,68 @@ class Restuarant:
 
     '''add item'''
     def add_item_to_menu(self, item, price):
+
+        self.menu_items["item"] = "price"
       
     '''book table'''
     def book_tables(self, table_number):
+        self.book_table.append(table_number)
 
     '''customer order'''
-    def customer_order(self,  ):
+    def customer_order(self, table, order):
+
+        order_details = {"table": table_number, "order": order}
+
+        self.customer_orders.append(order_details)
+
+    '''print menu'''
+    def print_menu(self):
+
+        for item, price in self.menu_items:
+
+            print(f'{item} : {price}')
+
+    '''prints table reservations'''
+
+    def print_table_resv(self):
+
+        for table in self.book_table:
+
+            print(f'{book_table}')
+
+    '''print customer order'''
+    def print_customer_orders(self):
+
+        for order in customer_orders:
+
+            print(f'{customer_orders}')
+
+'''create object'''
+hotel = Restuarant()
+
+'''add items'''
+hotel.add_item_to_menu('pizza', 1000)
+hotel.add_item_to_menu('burger', 1400)
+
+'''book table'''
+hotel.book_table(20)
+
+'''place order'''
+hotel.customer_orders(20, 'pizza')
+
+'''print'''
+print('The menu is as follows\n')
+hotel.print_menu()
+
+print('Reserved table is\n')
+hotel.print_table_resv()
+
+print('customer order details\n')
+hotel.print_customer_orders()
+
+
+
+
 
 
 
