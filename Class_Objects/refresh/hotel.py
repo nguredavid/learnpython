@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-
 '''Write a Python class Restaurant with attributes like menu_items, book_table, and customer_orders, and methods like add_item_to_menu, book_tables, and customer_order.
 Perform the following tasks now:'''
-
 class Restuarant:
 
     '''initialize'''
@@ -25,16 +23,16 @@ class Restuarant:
     '''customer order'''
     def customer_order(self, table, order):
 
-        order_details = {"table": table_number, "order": order}
+        order_details = {"table": table, "order": order}
 
         self.customer_orders.append(order_details)
 
     '''print menu'''
     def print_menu(self):
 
-        for item, price in self.menu_items:
+        for item, price in self.menu_items.items():
 
-            print(f'{item} : {price}')
+            print(item, price)
 
     '''prints table reservations'''
 
@@ -42,14 +40,14 @@ class Restuarant:
 
         for table in self.book_table:
 
-            print(f'{book_table}')
+            print(f'{self.book_table}')
 
     '''print customer order'''
     def print_customer_orders(self):
 
-        for order in customer_orders:
+        for order in self.customer_orders:
 
-            print(f'{customer_orders}')
+            print(f'Table: {self.customer_orders}')
 
 '''create object'''
 hotel = Restuarant()
@@ -59,19 +57,19 @@ hotel.add_item_to_menu('pizza', 1000)
 hotel.add_item_to_menu('burger', 1400)
 
 '''book table'''
-hotel.book_table(20)
+hotel.book_tables(20)
 
 '''place order'''
-hotel.customer_orders(20, 'pizza')
+hotel.customer_order(20, 'pizza')
 
 '''print'''
 print('The menu is as follows\n')
 hotel.print_menu()
 
-print('Reserved table is\n')
+print('\nReserved table is')
 hotel.print_table_resv()
 
-print('customer order details\n')
+print('\ncustomer order details')
 hotel.print_customer_orders()
 
 
