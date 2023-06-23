@@ -16,7 +16,7 @@ class BankAccount:
     '''deposit'''
     def deposit(self, amount):
         self.balance += amount
-        print(f'{amount} has been deposited to your account')
+        print(f'${amount} has been deposited to your account')
         
 
     '''withdraw'''
@@ -26,10 +26,10 @@ class BankAccount:
 
         else:
             self.balance -= amount
-            print(f'{amount} has been withdrawn from your account')
+            print(f'${amount} has been withdrawn from your account')
 
     def check_balance(self):
-        print(f'Your balance is : {self.balance}')
+        print(f'Your balance is : ${self.balance}')
 
 '''add bank acccount details'''
 
@@ -37,10 +37,11 @@ bank_account1 = BankAccount(2345, 14000, "12-27-2023", "David")
 bank_account2 = BankAccount(23431, 140002, "14-27-2023", "Ngure")
 bank_account3 = BankAccount(2345122, 140500, "15-27-2023", "Hudson")
 
-'''make a deposits'''
-bank_account1.deposit(300)
 '''make a deposit'''
-#bank_account.withdraw(21)
+bank_account1.deposit(000)
+'''make a deposit'''
+bank_account1.check_balance()
+bank_account1.withdraw(000)
 
 
 
