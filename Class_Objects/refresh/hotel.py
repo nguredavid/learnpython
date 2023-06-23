@@ -14,7 +14,7 @@ class Restuarant:
     '''add item'''
     def add_item_to_menu(self, item, price):
 
-        self.menu_items["item"] = "price"
+        self.menu_items[item] = price
       
     '''book table'''
     def book_tables(self, table_number):
@@ -40,21 +40,21 @@ class Restuarant:
 
         for table in self.book_table:
 
-            print(f'{self.book_table}')
+            print(f'Table: {table}')
 
     '''print customer order'''
     def print_customer_orders(self):
 
         for order in self.customer_orders:
 
-            print(f'Table: {self.customer_orders}')
+           print(table, order)
 
 '''create object'''
 hotel = Restuarant()
 
 '''add items'''
-hotel.add_item_to_menu('pizza', 1000)
-hotel.add_item_to_menu('burger', 1400)
+hotel.add_item_to_menu("pizza", 1000)
+hotel.add_item_to_menu("burger", 1400)
 
 '''book table'''
 hotel.book_tables(20)
@@ -63,7 +63,7 @@ hotel.book_tables(20)
 hotel.customer_order(20, 'pizza')
 
 '''print'''
-print('The menu is as follows\n')
+print('\nThe menu is as follows')
 hotel.print_menu()
 
 print('\nReserved table is')
