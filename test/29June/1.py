@@ -41,4 +41,6 @@ circle = Circle(7)
 
 circle.area()
 circle.perime()
+
+'''print area and perimeter'''
 circle.display()
