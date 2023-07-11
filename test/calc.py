@@ -32,16 +32,21 @@ class Calculator:
 
 '''create  the object'''
 calc = Calculator(30, 10)
-result = input("Please choose the arithemtic to perform by entering +, -, *, / : ")
-if result == "+":
-    print(calc.adds())
-elif result == "-":
-    print(calc.sub())
-elif result == "*":
-    print(calc.mult())
-elif result == "/":
-    print(calc.div())
-else:
-    print("Sorry, You have entered a wrong operator, please try again")
+while True:
+
+    result = input("Please choose the arithemtic to perform by entering +, -, *, / or q to quit: ")
+    if result == "q":
+        break
+    if result == "+":
+        print(calc.adds())
+    elif result == "-":
+        print(calc.sub())
+    elif result == "*":
+        print(calc.mult())
+    elif result == "/":
+        print(calc.div())
+    else:
+        print("Sorry, You have entered a wrong operator, please try again")
+    
 
 
