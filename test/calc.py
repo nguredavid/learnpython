@@ -5,6 +5,8 @@ class Calculator:
 
     '''initialize the class'''
     def __init__(self, num1, num2):
+
+        '''here are the data members'''
         self.num1 = num1
         self.num2 = num2
 
@@ -35,6 +37,7 @@ while True:
         um1 = int(input("Please enter your first number "))
         um2 = int(input("Please enter your second number "))
         break
+    '''handle error in case of wrong input'''
     except ValueError:
 
         print("Invalid input, please enter an integer.")
