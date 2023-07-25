@@ -1,2 +1,2 @@
-I'm now learning python
+I'm now learning python.
 
