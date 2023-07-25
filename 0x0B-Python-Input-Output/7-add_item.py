@@ -7,11 +7,11 @@ def save_to_json_file(my_obj, filename):
 
         json.dump(my_obj, myfile)
 
-data = {
+data = [
     
-        "person": ["age", "color"],
-        "country": ["Capital", "president"]
-}
+        "person", {"marks": ["age", "color"]},
+        "country", {"kenya": ["Capital", "president"]}
+]
 
 save_to_json_file(data, "eg.json")
 

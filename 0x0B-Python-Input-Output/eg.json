@@ -1,1 +1,1 @@
-{"person": ["age", "color"], "country": ["Capital", "president"]}
+["person", {"marks": ["age", "color"]}, "country", {"kenya": ["Capital", "president"]}]
