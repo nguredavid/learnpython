@@ -12,7 +12,7 @@ def json_to_python(filename):
 
     with open('new.json', 'w', encoding = 'UTF-8') as f:
 
-        json.dump(data, f)
+        json.dump(data, f, indent=4, sort_keys=True)
 
 
 result = json_to_python("eg.json")
