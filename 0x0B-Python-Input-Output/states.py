@@ -8,7 +8,13 @@ def json_to_python(filename):
 
         data = json.load(myfile)
         for state in data['states']:
-            print(state['name'], state['abbreviation'])
+            del state['abbreviation']
+
+    with open('new.json', 'w', encoding = 'UTF-8') as f:
+
+        json.dump(data, f)
+
+
 result = json_to_python("eg.json")
 #print(result)
 
