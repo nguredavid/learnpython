@@ -7,7 +7,23 @@ def python_dict_to_json(data):
     res = json.dumps(data, indent=4, sort_keys=True)
     return res
 
-data_list = {"name": "David", "age": 40}
+data_list = {
+
+        "people": [
+            {
+                "name": "David",
+                "age": 40,
+                "nationality": "Kenyan",
+                "Career": "Backend engineer"
+            },
+            {
+                "name": "Hudson",
+                "age": 2,
+                "Nationality": "Kenyan",
+                "Career": "Engineer"
+            }
+        ]
+}
 
 result = python_dict_to_json(data_list)
 
