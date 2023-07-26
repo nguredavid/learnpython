@@ -7,13 +7,11 @@ def save_to_json_file(my_obj, filename):
 
         json.dump(my_obj, myfile)
 
-data = [
-    
-        "person", {"marks": ["age", "color"]},
-        "country", {"kenya": ["Capital", "president"]}
-]
+def load_from_json_file(filename):
+    with open(filename, 'r', encoding = 'UTF-8') as myfile:
+        json.load(myfile)
 
-save_to_json_file(data, "eg.json")
+
 
 
 
