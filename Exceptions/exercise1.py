@@ -2,25 +2,31 @@
 
 '''Write a Python program to handle a ZeroDivisionError exception when dividing a number by zero.'''
 
-def division():
+def erro_handling():
+
     while True:
-    
+
         try:
-            num = input("Please enter 2 numbers: ")
-            num1, num2 = num.split("/")
+            numbers = input("Enter numbers to divide: ")
+
+            num1, num2 = numbers.split("/")
+
             num1 = int(num1)
             num2 = int(num2)
             result = num1 / num2
 
         except ValueError:
-            print("Please input integer")
+
+            print("Inputs should be a number")
         except ZeroDivisionError:
-            print("number cannot be divided by zero")
+            print("A number cannot be divided by zero")
+
         else:
             break
     print(f"{num1} / {num2} = {result}")
 
-output = division()
-#print(output)
+erro_handling()
+
+
 
 
