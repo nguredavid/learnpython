@@ -30,6 +30,6 @@ def fuel():
         print("E")
 
     else:
-        print(f"{fuel_gauge}%")
+        print(f"{fuel_gauge:.0F}%")
 fuel()
 
