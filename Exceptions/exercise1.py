@@ -19,7 +19,6 @@ def division():
         else:
             break
     print(f"{num1} / {num2} = {result}")
-            
 
 output = division()
 #print(output)
