@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 
 items = ["banana", "apple", "orange"]
-for item in items:
-    print(item)
+for i, item in enumerate(items, 1):
+    print(f"{i}. {item}")
