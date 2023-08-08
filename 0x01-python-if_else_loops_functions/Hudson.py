@@ -2,7 +2,7 @@
 
 def split_sentence():
     sentence = input("Enter a sentence: ")
-    words = sentence.split()
+    words = sentence.split("/")
     print(words)
 
     print("Individual words:")
