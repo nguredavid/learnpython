@@ -20,7 +20,9 @@ def is_valid(s):
             if s[-2:].isdigit():
  
                 if s[:1] != 0:
-            
-                    return True
+                    
+                    if s.isalnum:
+                        return True
+    return False
 
 main()
