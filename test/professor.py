@@ -5,7 +5,8 @@ from random import randint
 def main():
 
     '''get level'''
-    get_level()
+    level = get_level()
+    generate_integer(level)
 
 def get_level():
 
@@ -17,11 +18,20 @@ def get_level():
 
         except ValueError:
             pass
-    print("Level: ", level)
+    #print("Level: ", level)
 
-def generate_integer():
+def generate_integer(level):
 
-    pass
+    if level == 1:
+        x = randint(0, 9)
+        y = randint(0, 9)
+    elif level ==2:
+        x = randint(10, 99)
+        y = randint(10, 99)
+    else:
+        x = randint(100, 999)
+        y = randint(100, 999)
+    print
 
 if __name__ == "__main__":
     main()
