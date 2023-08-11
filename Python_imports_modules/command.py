@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-from cowsay import pig
+import cowsay
+from cowsay import trex
 from sys import argv
 if len(argv) == 2:
-    pig("Hello, " + argv[1])
+    trex("Hello, " + argv[1])
+print(dir(cowsay))
