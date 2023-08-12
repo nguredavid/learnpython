@@ -9,5 +9,5 @@ def write_file(filename="", text=""):
         res = myfile.write(text)
 
         return res
-
-write_file('text.txt', 'David Ngure back end engineer')
+#dat = ["David", {"speciality": ("python", "BE")}]
+write_file('text.txt', 'David is a backend engineer')
