@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 import csv
 with open("data.csv", "r", encoding="UTF-8") as csvfile:
-
-    reader = csv.reader(csvfile)
+    store = []
+    reader = csv.DictReader(csvfile, fieldnames= ["id", "name", "manager", "location"])
     for row in reader:
-        print(row)
+        store.append(row)
+
+    for row in store:
+
+        writer.writerrow({"id": ["id"], "name": ["name"], "manager": ["manager"], "location": ["location"]})
