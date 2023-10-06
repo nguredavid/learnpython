@@ -2,9 +2,10 @@
 
 print("Ngure the backend engineer")
 
-def read_file(filename=""):
-    with open(filename, "r", encoding="UTF-8") as myfile:
-        res = myfile.read()
+def read_file(filename="", text=""):
+    with open(filename, "w", encoding="UTF-8") as myfile:
+        res = myfile.write(text)
         return res
-output = read_file("text.txt")
-print(output)
+result = read_file("test.py", "Ngure you will soon be a software engineer")
+print(result)
+        
